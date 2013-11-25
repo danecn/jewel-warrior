@@ -7,7 +7,7 @@ jewel.game = (function() {
 			screen = $("#" + screenId)[0];
 		if (activeScreen) {
 			dom.removeClass(activeScreen, "active");
-			console.log("Screen: " + screenId + " hidden.");
+			console.log("Screen: previous screen hidden.");
 		}
 		jewel.screens[screenId].run();
 		dom.addClass(screen, "active");

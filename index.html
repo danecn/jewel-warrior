@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Jewel Warrior</title>
 	<link rel="stylesheet" href="styles/main.css" />
-	<link href='http://fonts.googleapis.com/css?family=Geo|Slackey' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/mobiles.css" 
+	media="screen and (max-device-width: 768px) and 
+	(orientation: portrait) and screen (max-device-width: 1024px) and
+	(orientation: landscape)">
+	<link href='http://fonts.googleapis.com/css?family=Geo|Slackey' 
+	rel='stylesheet' type='text/css'>
 	<script src="scripts/modernizr.js"></script>
 	<script src="scripts/loader.js"></script>
 </head>
@@ -15,6 +21,12 @@
 		<h1 class="logo">Jewel <br/>Warrior</h1>
 		<p class="continue">Click to continue</p>
 	</div>
+
+	<div class="screen" id="install-screen">
+		<h1 class="logo">Jewel <br/>Warrior</h1>
+		<p class="continue">Click the <img src="styles/images/install-icon.png" alt="Install icon"> button to install the game to your home.</p>
+	</div>
+
 	<div class="screen" id="main-menu">
 		<h2 class="logo">Jewel <br/>Warrior</h2>
 		<ul class="menu">
@@ -24,6 +36,7 @@
 			<li><button name="exit-screen">Exit</button></li>
 		</ul>
 	</div>
+	
 	<div class="screen" id="game-screen"></div>
 	<div class="screen" id="high-scores"></div>
 </div>
